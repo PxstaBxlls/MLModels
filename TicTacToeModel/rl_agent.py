@@ -65,7 +65,8 @@ class Q_Agent:
 
     
     def choose_action(self,state,valid_actions):
-        # for actions in valid_actions:
+        #--to heuristic logic to be deployed later
+        # for actions in valid_actions: 
         #     hypothetical_state = self.simulate_user_move(state, actions)
         #     if self.check_user_win(hypothetical_state):
         #         return actions
