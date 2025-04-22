@@ -65,10 +65,10 @@ class Q_Agent:
 
     
     def choose_action(self,state,valid_actions):
-        for actions in valid_actions:
-            hypothetical_state = self.simulate_user_move(state, actions)
-            if self.check_user_win(hypothetical_state):
-                return actions
+        # for actions in valid_actions:
+        #     hypothetical_state = self.simulate_user_move(state, actions)
+        #     if self.check_user_win(hypothetical_state):
+        #         return actions
         if np.random.rand() < self.epsilon:   #Exploration
             return self.smart_explore(state, valid_actions)
             ## return random.choice(valid_actions)  # Random action for exploration
